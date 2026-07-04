@@ -1,0 +1,1 @@
+This is a 3-page personal portfolio website I built for the Shi'era Mentorship Program to show my growth as a developer. It features a home page introducing myself, a project section tracking my progress, and a clean contact form. I used semantic HTML5 to structure everything properly and Tailwind CSS to make it look smooth and modern with a nice emerald green theme.
