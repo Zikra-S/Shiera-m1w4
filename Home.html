@@ -4,48 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Zikra Seid</title>
-    <link rel="stylesheet" href="Style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="header-content">
+  <body class="bg-gray-50 text-gray-800 font-sans h-screen flex flex-col">
+    <header class="bg-white">
+      <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-emerald-600 tracking-wider">ZIKRA-S</div>
         <nav>
-          <ul class="nav-list">
-            <li><a href="./Home.html" class="nav-link">Home</a></li>
-            <li><a href="./Projects.html" class="nav-link">Projects</a></li>
-            <li><a href="./Contact.html" class="nav-link">Contact</a></li>
+          <ul class="flex space-x-6 font-medium">
+            <li><a href="./Home.html" class="text-emerald-600 font-semibold">Home</a></li>
+            <li><a href="./Projects.html" class="text-gray-600 hover:text-emerald-600">Projects</a></li>
+            <li><a href="./Contact.html" class="text-gray-600 hover:text-emerald-600">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <main>
-      <section>
-        <h1>Hey, I'm Zikra</h1>
-        <p>
-          A student at Wollo university who enjoys learning and taking new
-          challenges. I'm curious person who likes exploring different topics,
-          improving my skills, and growing every day. I always look for
-          opportunities to improve my skills, gain experience, and make progress
-          forward.
-        </p>
-        <p>
-          This is my first proper semantic HTML + CSS project from Shi'era
-          mentorship.
-        </p>
-      </section>
-
-      <article>
-        <h2>About Me</h2>
-        <p>
-          Currently learning HTML fundamentals, semantic structure, CSS and best
-          practices. Excited to grow into full-stack development.
-        </p>
-      </article>
+    <main class="max-w-4xl w-full mx-auto px-4 flex flex-col justify-center flex-grow">
+      <div class="grid md:grid-cols-5 gap-8 items-center">
+        <section class="md:col-span-3 space-y-4">
+          <div class="inline-block bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">SHI'ERA MENTORSHIP PROGRAM</div>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Hey, I'm <span class="text-emerald-600">Zikra</span></h1>
+          <p class="text-base text-gray-600 leading-relaxed">
+            Just a student who enjoys learning and taking new challenges. I'm curious person who likes exploring different topics,
+            improving my skills, and growing every day. I always look for opportunities to improve my skills, gain experience, and make progress
+            forward.
+          </p>
+        </section>
+        <article class="md:col-span-2 bg-white p-6 rounded-2xl shadow-xl shadow-gray-100 space-y-4">
+          <h2 class="text-xl font-bold text-gray-900">About Me</h2>
+          <p class="text-sm text-gray-600 leading-relaxed">
+                    Currently learning semantic structure, CSS, Talwind and Excited to grow into full-stack development.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-gray-50">
+            <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Current Focus</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium bg-gray-50 text-gray-600 px-2.5 py-1 rounded-md">Semantic HTML</span>
+              <span class="text-xs font-medium bg-gray-50 text-gray-600 px-2.5 py-1 rounded-md">Tailwind CSS</span>
+              <span class="text-xs font-medium bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md">Future Full-Stack</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
-
-    <footer>
-      <p>&copy; 2026 Zikra Seid. Built with pure semantic HTML + CSS.</p>
+    <footer class="bg-white py-4 text-center text-xs text-gray-400 border-t border-gray-100 shrink-0">
+      <p>&copy; 2026 Zikra Seid. Built with Tailwind CSS.</p>
     </footer>
   </body>
 </html>

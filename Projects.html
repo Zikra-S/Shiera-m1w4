@@ -4,44 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Zikra Seid</title>
-    <link rel="stylesheet" href="Style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="header-content">
+  <body class="bg-gray-50 text-gray-800 font-sans h-screen flex flex-col justify-between overflow-hidden">
+    <header class="bg-white shadow-sm shrink-0">
+      <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-emerald-600 tracking-wider">ZIKRA-S</div>
         <nav>
-          <ul class="nav-list">
-            <li><a href="./Home.html" class="nav-link">Home</a></li>
-            <li><a href="./Projects.html" class="nav-link">Projects</a></li>
-            <li><a href="./Contact.html" class="nav-link">Contact</a></li>
+          <ul class="flex space-x-6 font-medium">
+            <li><a href="./Home.html" class="text-gray-600 hover:text-emerald-600 transition">Home</a></li>
+            <li><a href="./Projects.html" class="text-emerald-600 font-semibold">Projects</a></li>
+            <li><a href="./Contact.html" class="text-gray-600 hover:text-emerald-600 transition">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <main>
-      <h1>My Projects</h1>
-
-      <section>
-        <h2>Featured projects</h2>
-
-        <div class="projects-grid">
-          <article class="card">
-            <h3>Project 1: Personal Portfolio</h3>
-            <p>This 3-page semantic HTML + CSS website.</p>
-            <p><strong>Tech:</strong> Pure HTML5 Semantic Markup</p>
-          </article>
-
-          <article class="card">
-            <h3>Project 2: Coming Soon</h3>
-            <p>More exciting projects will b added when i learn more</p>
-          </article>
-        </div>
-      </section>
+    <main class="max-w-4xl w-full mx-auto px-4 flex flex-col justify-center flex-grow">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 tracking-tight mb-2">My Projects</h1>
+        <p class="text-sm text-gray-500">A collection of things I've built and what I'm working on next.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <article
+          class="bg-white p-6 rounded-2xl shadow-xl shadow-gray-100 flex flex-col justify-between h-48 transition hover:-translate-y-1 duration-200">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Personal Portfolio</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              A responsive, multi-page portfolio website that shows structural semantic layouts and modern design.
+            </p>
+          </div>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">
+              HTML5 / Tailwind CSS
+            </span>
+            <a href="./Home.html" class="text-xs font-medium text-gray-400 hover:text-emerald-600 transition">View Live →</a>
+          </div>
+        </article>
+        <article
+          class="bg-white p-6 rounded-2xl shadow-xl shadow-gray-100 flex flex-col justify-between h-48 transition hover:-translate-y-1 duration-200">
+          <div>
+            <div class="flex items-center space-x-2 mb-2">
+              <h3 class="text-lg font-bold text-gray-900">Next step: Javascript</h3>
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Now that I've got the hang of layouts, I'm shifting my focus to JavaScript. My goal next is to start building functional web
+              applications and level up my frontend skills.
+            </p>
+          </div>
+          <div class="mt-4">
+            <span class="text-xs font-semibold tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md"> IN PROGRESS</span>
+          </div>
+        </article>
+      </div>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Zikra Seid. Built with pure semantic HTML + CSS.</p>
+    <footer class="bg-white py-4 text-center text-xs text-gray-400 border-t border-gray-100 shrink-0">
+      <p>&copy; 2026 Zikra Seid. Built with Tailwind CSS.</p>
     </footer>
   </body>
 </html>
